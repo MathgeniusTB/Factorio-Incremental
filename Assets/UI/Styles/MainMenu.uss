@@ -1,0 +1,21 @@
+.main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    width: 24%;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+
+.header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a784a2a2d2cba9c258bb2fe4a81b8299, type: 3}
+  m_Name: Iron Miner
+  m_EditorClassIdentifier: 
+  itemName: Iron Miner
+  itemIcon: {fileID: 0}
+  weight: 0
+  itemState: 0
+  itemType: 1
+  miner: {fileID: 11400000, guid: 7a3a74ea8050b7de2922f0bbc4348eee, type: 2}
+  building: {fileID: 0}
