@@ -18,6 +18,7 @@ public class ItemSO : ScriptableObject {
     public Sprite itemIcon;
     public float weight;
     public ItemState itemState;
+    public bool canBeMined = false;
     public ItemType itemType;
     public MinerSO miner;
     public BuildingSO building;

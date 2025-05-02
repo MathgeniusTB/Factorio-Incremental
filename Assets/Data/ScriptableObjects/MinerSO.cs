@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "NewItem", menuName = "Game/Item")]
+[CreateAssetMenu(fileName = "NewMiner", menuName = "Game/Miner")]
 public class MinerSO : ScriptableObject {
     public string minerName;
     public Sprite icon;

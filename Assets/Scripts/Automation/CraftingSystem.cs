@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class CraftingSystem : MonoBehaviour {
-    public Resources resources;
+    public Inventory resources;
 
     public void Craft(RecipeSO recipe) {
 

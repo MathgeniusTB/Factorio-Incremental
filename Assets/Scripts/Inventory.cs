@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Inventory : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Inventory : MonoBehaviour
     public void AddItem(ItemSO item, int amount) {
         // Check if the item already exists in the list
         ItemStack existingItem = items.Find(i => i.item == item);
+        
         if (existingItem != null)
         {
             // If it exists, increase the amount
@@ -85,5 +87,17 @@ public class Inventory : MonoBehaviour
                 items.Remove(existingItem);
             }
         }
+    }
+
+    public List<ItemStack> GetItems(ItemSO.ItemType type) {
+        List<ItemStack> filteredItems = new List<ItemStack>();
+        foreach (ItemStack item in items)
+        {
+            if (item.item.itemType == type)
+            {
+                filteredItems.Add(item);
+            }
+        }
+        return filteredItems;
     }
 }

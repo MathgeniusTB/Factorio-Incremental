@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a784a2a2d2cba9c258bb2fe4a81b8299, type: 3}
-  m_Name: Furnace
+  m_Name: Copper ore
   m_EditorClassIdentifier: 
-  itemName: Furnace
+  itemName: Copper ore
   itemIcon: {fileID: 0}
-  weight: 0
+  weight: 1
   itemState: 0
-  canBeMined: 0
-  itemType: 1
+  canBeMined: 1
+  itemType: 0
   miner: {fileID: 0}
-  building: {fileID: 11400000, guid: 71ed1458fe113ec0197d5cdb14de5760, type: 2}
+  building: {fileID: 0}

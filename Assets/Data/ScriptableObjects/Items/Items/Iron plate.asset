@@ -16,6 +16,7 @@ MonoBehaviour:
   itemIcon: {fileID: 0}
   weight: 1
   itemState: 0
+  canBeMined: 0
   itemType: 0
   miner: {fileID: 0}
   building: {fileID: 0}

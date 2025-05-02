@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewRecipe", menuName = "Game/Recipe")]
@@ -11,9 +12,23 @@ public class RecipeSO : ScriptableObject {
 }
 
 [System.Serializable]
-public class ItemStack {
+public class ItemStack : INotifyPropertyChanged{
     public ItemSO item;
-    public int amount;
+    private int _amount;
+    public int amount
+    {
+        get => _amount;
+        set
+        {
+            if (_amount != value)
+            {
+                _amount = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(amount)));
+            }
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
 
     // Constructor
     public ItemStack(ItemSO item, int amount) {

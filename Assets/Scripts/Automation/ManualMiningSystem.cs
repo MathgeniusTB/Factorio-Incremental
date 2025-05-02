@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class ManualMiningSystem : MonoBehaviour {
-    public Resources resources;
+    public Inventory resources;
     public ItemSO minedItem;
 
     public void Mine() {

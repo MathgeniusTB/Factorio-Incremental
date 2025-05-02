@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BuildSystem : MonoBehaviour {
     public AutomationManager automation;
-    public Resources resources;
+    public Inventory resources;
 
     public void PlaceMiner(ItemSO minerItem, ItemSO outputItem, float rate) {
         if (!resources.HasItem(minerItem, 1)) return;

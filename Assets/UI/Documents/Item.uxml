@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; flex-direction: row; height: 10px; justify-content: flex-start; align-self: flex-start; align-content: flex-start; align-items: flex-start;">
+        <engine:Label text="ItemName123" name="ItemName" style="justify-content: center; align-self: center;" />
+        <engine:Label text="ItemAmount123" name="ItemAmount" style="justify-content: center; align-self: center;" />
+        <engine:Button text="Mine" name="ActionButton" style="justify-content: center; align-self: center;" />
+    </engine:VisualElement>
+</engine:UXML>

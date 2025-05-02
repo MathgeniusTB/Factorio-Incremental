@@ -1,22 +1,12 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Styles/MainMenu.uss?fileID=7433441132597879392&amp;guid=54db7649d9daa4096ad6cf59b3030539&amp;type=3#MainMenu" />
-    <engine:VisualElement class="main-container">
-        <engine:VisualElement name="resource-panel" class="panel">
-            <engine:Label text="Resource" class="header" />
-            <engine:ScrollView name="resource-list" />
-        </engine:VisualElement>
-        <engine:VisualElement name="crafting-panel" class="panel">
-            <engine:Label text="Crafting" class="header" />
-            <engine:ScrollView name="crafting-list" />
-        </engine:VisualElement>
-        <engine:VisualElement name="automation-panel" class="panel">
-            <engine:Label text="Automation" class="header" />
-            <engine:ScrollView name="machines-list" />
-            <engine:ScrollView name="miners-list" />
-        </engine:VisualElement>
-        <engine:VisualElement name="build-panel" class="panel">
-            <engine:Label text="Build Menu" class="header" />
-            <engine:ScrollView name="build-list" />
-        </engine:VisualElement>
-    </engine:VisualElement>
+    <engine:ScrollView class="main-container panel header" style="width: 347px;">
+        <engine:Label text="Items" name="Items" />
+        <engine:Foldout text="Resources&#10;">
+            <engine:ListView binding-source-selection-mode="Manual" item-template="project://database/Assets/UI/Documents/Item.uxml?fileID=9197481963319205126&amp;guid=9170452ad8ed261afb016a9056f63048&amp;type=3#Item" name="ResourcesListView" data-source-type="ItemStack, Assembly-CSharp" />
+        </engine:Foldout>
+        <engine:Foldout text="Buildings">
+            <engine:ListView item-template="project://database/Assets/UI/Documents/Item.uxml?fileID=9197481963319205126&amp;guid=9170452ad8ed261afb016a9056f63048&amp;type=3#Item" name="BuildingsListView" />
+        </engine:Foldout>
+    </engine:ScrollView>
 </engine:UXML>

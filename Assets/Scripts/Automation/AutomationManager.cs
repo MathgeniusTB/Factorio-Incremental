@@ -4,7 +4,7 @@ using UnityEngine;
 public class AutomationManager : MonoBehaviour {
     public List<MinerInstance> miners;
     public List<MachineInstance> machines;
-    public Resources resources;
+    public Inventory resources;
     void Start() {
         miners = new List<MinerInstance>();
         machines = new List<MachineInstance>();

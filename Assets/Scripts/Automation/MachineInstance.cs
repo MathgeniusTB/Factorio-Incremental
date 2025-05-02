@@ -2,7 +2,7 @@ public class MachineInstance {
     public RecipeSO currentRecipe;
     public float timer;
 
-    public void Tick(float deltaTime, Resources resources) {
+    public void Tick(float deltaTime, Inventory resources) {
         if (currentRecipe == null || !resources.HasItems(currentRecipe.inputs)) return;
 
         timer += deltaTime;

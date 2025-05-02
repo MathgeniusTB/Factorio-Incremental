@@ -6,4 +6,6 @@ public class TechSO : ScriptableObject {
   public List<TechSO> prerequisites;
   public List<RecipeSO> unlocks;
   public List<ItemStack> cost;
+
+  public float itemResearchTime;
 }
